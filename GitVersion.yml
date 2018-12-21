@@ -1,4 +1,10 @@
 mode: Mainline
-branches: {}
+branches:
+  develop:
+    mode: ContinuousDeployment
+    tag: unstable
+    increment: Minor
+    prevent-increment-of-merged-branch-version: false
+    track-merge-target: true
 ignore:
   sha: []
